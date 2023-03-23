@@ -1,0 +1,84 @@
+.pseudo-checkbox_primary {
+    position: relative;
+    display: block;
+    border: 1px solid #94a3b8;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    flex-shrink: 0;
+}
+
+:focus + .pseudo-checkbox_primary,
+:focus + .pseudo-radio_primary {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+label:hover :not(:checked) + .pseudo-checkbox_primary,
+label:hover :not(:checked) + .pseudo-radio_primary {
+    border-color: #334155;
+}
+
+.pseudo-checkbox_primary::before {
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url("../img/icon-checked.svg") no-repeat center / contain;
+    user-select: none;
+}
+
+:checked + .pseudo-checkbox_primary {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+}
+
+:checked + .pseudo-checkbox_primary::before {
+    content: '';
+}
+
+.pseudo-checkbox_secondary {
+    flex-shrink: 0;
+    position: relative;
+    display: block;
+    height: 3.2rem;
+    width: 6.8rem;
+    background-color: rgb(156, 163, 175);
+    border-radius: 100rem;
+    transition: background-color var(--transition);
+}
+
+.pseudo-checkbox_secondary .baloon {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    transition: transform var(--transition);
+}
+
+:checked + .pseudo-checkbox_secondary {
+    background-color: rgb(15, 118, 110);
+}
+
+:checked + .pseudo-checkbox_secondary .baloon {
+    transform: translateX(calc(6.8rem / 2 + 2px));
+}
+
+.pseudo-radio_primary {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #94a3b8;
+}
+
+:checked + .pseudo-radio_primary {
+    border: 6px solid var(--color-accent);
+}

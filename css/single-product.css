@@ -33,6 +33,7 @@
 
 .product-info__title {
     font-size: 3rem;
+    margin: 0;
 }
 
 .product-info__sku {

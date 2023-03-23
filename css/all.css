@@ -5,8 +5,10 @@
 @import "fonts.css";
 @import "basic.css";
 @import "buttons.css";
+@import "inputs.css";
 @import "header.css";
 @import "slider.css";
 @import "sticker.css";
 @import "single-product.css";
+@import "archive-product.css";
 @import "footer.css";

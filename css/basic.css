@@ -53,6 +53,13 @@ img {
     display: block;
 }
 
+label,
 button {
     cursor: pointer;
+}
+
+.section-header__title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0 0 0.67em;
 }
