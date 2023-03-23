@@ -1,0 +1,103 @@
+<main class="product">
+    <div class="container">
+        <div class="product-row">
+            <div class="product-galleries">
+                <div class="product-gallery slider">
+                    <div class="sticker sticker_shadow">
+                        <img src="./img/icon-new.svg" alt="зірки" width="14" height="14" loading="lazy">
+                        <span>Новинка</span>
+                    </div>
+                    <div class="slider-row">
+                        {% for image in product.images %}
+                            <div class="product-gallery__item slide">
+                                <img src="{{ image }}" alt="товар" class="product-gallery__img" loading="lazy" width="1000" height="1000">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="product-thumbs slider-thumbs">
+                    {% for image in product.images %}
+                        <div class="product-thumbs__item slider-thumbs__item" data-index="{{ loop.index0 }}">
+                            <img src="{{ image }}" alt="товар" class="product-thumbs__img" loading="lazy" width="1000" height="1000">
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-info__title">{{ product.title }}</h1>
+
+                <p class="product-info__price product-price">
+                    <span class="product-price__s">
+                        {{ product.price }} грн.
+                    </span>
+                    <span class="product-info__sku">арт.: {{ product.sku }}</span>
+                </p>
+                <div class="product-info__controls product-controls">
+                    <div class="product-controls__qnt">
+                        <button type="button" aria-label="зменшити кількість">
+                            <img src="./img/icon-minus.svg" alt="мінус">
+                        </button>
+                        <input type="text" disabled value="1">
+                        <button type="button" aria-label="збільшити кількість кількість">
+                            <img src="./img/icon-plus.svg" alt="плюс">
+                        </button>
+                    </div>
+                    <div class="product-controls__add-to-cart">
+                        <button type="button" class="btn">
+                            <img src="./img/icon-add-to-cart.svg" alt="корзина" class="btn__img">
+                            <span class="btn__text">Додати в корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <hr class="product-info__hr">
+                <div class="product-info__group">
+                    <p class="product-info__subtitle">
+                        <span>Опис</span>
+                        <img class="minus" src="./img/icon-minus.svg" alt="мінус" width="16" height="16">
+                        <img class="plus" src="./img/icon-plus.svg" alt="плюс" width="16" height="16">
+                    </p>
+                    <p class="product-info__description">{{ product.description }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-tabs">
+            <nav class="tabs-nav">
+                <button type="button" data-anchor="#options" class="tabs-nav__button active">Характеристики</button>
+                <button type="button" data-anchor="#video" class="tabs-nav__button">Відео</button>
+                <button type="button" data-anchor="#analog" class="tabs-nav__button">Аналоги</button>
+            </nav>
+            <div class="tabs-content">
+                <div class="tabs-content__item active" id="options">
+                    <table class="product__props">
+                        <tbody>
+                            {% for prop in product.props %}
+                                <tr>
+                                    <th>{{ prop.label }}</th>
+                                    <td>{{ prop.value }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabs-content__item" id="video">
+                    <div class="iframe-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Be-mu0mDPiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="tabs-content__item" id="analog">
+                    <table class="product__props">
+                        <tbody>
+                            {% for analog in product.analogs %}
+                                <tr>
+                                    <td>
+                                        <a href="./single-product.html">{{ analog.name }}</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

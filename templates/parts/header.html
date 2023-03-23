@@ -1,0 +1,82 @@
+<header class="header">
+    <div class="container">
+        <div class="header-row">
+            <a href="index.html" class="header-logo">
+                <img src="./img/logo.svg" width="162" height="46" alt="логотип" class="header-logo__img">
+            </a>
+            <form class="header-search form">
+                <fieldset class="form__fieldset">
+                    <input type="search" class="form__input" name="search" required placeholder="Пошук товарів">
+                    <button type="submit" class="form__btn" aria-label="Пошук">
+                        <img src="./img/icon-search.svg" alt="лупа">
+                    </button>
+                </fieldset>
+            </form>
+            <div class="header-controls">
+                <div class="header-controls__group">
+                    <button type="button" class="header-controls__btn">
+                        <img src="./img/icon-user.svg" alt="користувач">
+                    </button>
+                </div>
+                <div class="header-controls__group">
+                    <button type="button" class="header-controls__btn header-controls__btn_cart">
+                        <img src="./img/icon-cart.svg" alt="корзина">
+                        <span class="cnt">1</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- /.header-row -->
+        <div class="header-row">
+            <div class="header-supermenu">
+                <button type="button" class="header-supermenu__btn">
+                    <img src="./img/icon-services.svg" alt="сервіси">
+                    <span>Каталог товарів</span>
+                    <img src="./img/icon-arrow-down.svg" alt="стрілка вниз" class="arrow">
+                </button>
+                <div class="supermenu">
+                    <ul class="supermenu-group">
+                        {% for term in terms %}
+                            <li class="supermenu-group__item{% if term.subterms.length %} has-children{% endif %}">
+                                <span class="supermenu-group__label">
+                                    {{ term.title }}
+                                </span>
+                                {% if term.subterms %}
+                                    <ul class="supermenu-subgroup">
+                                        {% for subterm in term.subterms %}
+                                            <li class="supermenu-subgroup__item{% if subterm.subtermsArray.length %} has-children{% endif %}">
+                                                <a href="archive-product.html" class="supermenu-subgroup__title">{{ subterm.subtermGroup }}</a>
+                                                {% if subterm.subtermsArray.length %}
+                                                    <ul class="subgroup-list">
+                                                        {% for item in subterm.subtermsArray %}
+                                                            <li class="subgroup-list__item">
+                                                                <a class="subgroup-list__link" href="archive-product.html">{{ item.title }}</a>
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <ul class="header-menu">
+                <li class="header-menu__item">
+                    <a href="index.html" class="header-menu__link">Головна</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="archive-blog.html" class="header-menu__link">Блог</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="archive-blog.html" class="header-menu__link">Контакти</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.header-row -->
+    </div>
+</header>
+<!-- /.header -->

@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    line-height: 1.4;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-content);
+}
+
+.content {
+    flex: 1 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: var(--gap-content);
+    align-content: start;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.container {
+    padding: 0 15px;
+    width: var(--width-container);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}

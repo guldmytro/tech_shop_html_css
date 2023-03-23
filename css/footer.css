@@ -1,0 +1,18 @@
+.footer {
+    padding: 6rem 0;
+    background-color: var(--color-bg);
+    border-top: 1px solid #ebebeb;
+}
+
+.footer-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    flex: 0 0 auto;
+    max-width: 16.2rem;
+    max-height: 4.6rem;
+}

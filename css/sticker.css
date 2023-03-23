@@ -1,0 +1,20 @@
+.sticker {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.4rem;
+    font-size: 1.4rem;
+}
+
+.sticker img {
+    width: 1.4rem;
+    height: 1.4rem;
+    filter: var(--filter-icon);
+    user-select: none;
+}
+
+.sticker_shadow {
+    background-color: var(--color-bg);
+    border-radius: 10rem;
+    padding: 0.6rem 1rem;
+    box-shadow: 0.2rem 0.8rem 4rem rgba(0, 0, 0, .08);
+}

@@ -1,0 +1,31 @@
+:root {
+    /* width */
+    --width-container: 1300px;
+    /* header-offset */
+    --header-offset: 16.5rem;
+    /* gaps */
+    --gap-content: 8rem;
+    /* color */
+    --color-bg: #fff;
+    --color-bg-extra: rgba(241,245,249,.7);
+    --color-text: #111827;
+    --color-text-invert: #fff;
+    --color-bg-hover: #f1f5f9;
+    --color-accent: #0ea5e9;
+    --color-brand: #0f172a;
+    --color-brand-hover: #1e293b;
+    --color-success: #22c55e;
+    /* shadow */
+    --shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
+    --shadow-light: 0 0 0.5rem 0 rgba(0,0,0,.15);
+    /* filter */
+    --filter-invert: invert(1);
+    --filter-icon: invert(23%) sepia(12%) saturate(1332%) hue-rotate(180deg) brightness(93%) contrast(88%);
+    /* transition */
+    --time-transition: 150ms;
+    --transition: var(--time-transition) cubic-bezier(.4,0,.2,1);
+    /* border */
+    --border-light: 1px solid #ebebeb;
+    /* aspect-ratio */
+    --aspect-ratio-product: 1 / 1;
+}
