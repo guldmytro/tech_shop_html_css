@@ -5,6 +5,13 @@
     font-size: 1.4rem;
 }
 
+.sticker span {
+    position: relative;
+    top: 1px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
 .sticker img {
     width: 1.4rem;
     height: 1.4rem;

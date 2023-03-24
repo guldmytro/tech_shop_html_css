@@ -13,7 +13,7 @@
 
 .product-galleries {
     position: sticky;
-    top: calc(var(--header-offset) + 3rem);
+    top: calc(var(--header-offset) + var(--header-offset-d));
 }
 
 .product-galleries .sticker {
@@ -55,6 +55,11 @@
     font-weight: 700;
     color: var(--color-success);
     border-radius: 0.8rem;
+}
+
+.product-price__s_small {
+    padding: 0.6rem 1rem;
+    font-size: 1.4rem;
 }
 
 .product-price > * + * {

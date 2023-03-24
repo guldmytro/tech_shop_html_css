@@ -13,7 +13,7 @@
     border-radius: 100rem;
     padding: 0 4rem;
     transition: background-color var(--transition);
-    box-shadow: 0 0 #0000, 0 0 #000,var(--tw-shadow), 0 2rem 2.5rem -0.5rem rgba(0, 0, 0, .1), 0 0.8rem 1rem -0.6rem rgba(0, 0, 0, .1);
+    box-shadow: 0 2rem 2.5rem -0.5rem rgba(0, 0, 0, .1), 0 0.8rem 1rem -0.6rem rgba(0, 0, 0, .1);
 }
 
 .btn:hover {
@@ -24,4 +24,32 @@
     height: 2rem;
     filter: var(--filter-invert);
     user-select: none;
+}
+
+.btn_small {
+    padding: 0.8rem 1.6rem;
+    height: auto;
+    line-height: 1;
+    font-weight: 400;
+    column-gap: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.btn__img_small {
+    width: 1.4rem;
+    filter: var(--filter-invert);
+    user-select: none;
+}
+
+.btn_invert {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.btn__img_invert {
+    filter: var(--filter-icon);
+}
+
+.btn_invert:hover {
+    background-color: #f3f4f6;
 }

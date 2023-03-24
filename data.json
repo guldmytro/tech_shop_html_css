@@ -30,6 +30,147 @@
                 {"name": "AGM Asp-Micro TM160Y. ТЕПЛОВІЗІЙНИЙ МОНОКУЛЯР"},
                 {"name": "AEcoFlow RIVER 2 Портативне джерело живлення"}
             ]
+        },
+        {
+            "title": "EcoFlow RIVER 2 Портативне джерело живлення",
+            "description": "RIVER 2 ємністю 256 Вт•год із оновленим літій-залізо-фосфатним акумулятором (LiFePO 4) гарантує 3000+ циклів із збереженням 80% ємності. Має розширений захист BMS для моніторингу напруги, струму та температури. А це дорівнює понад 10 років щоденного використання. Нова станція RIVER 2 має універсальний простий дизайн та компактну вагу, на 30% менше у порівнянні з попередньою версією – 3,5 кг. Швидка зарядка: 0% -100% за 60 хвилин. Швидка зарядка станції з революційною технологією X-Stream: 0-80% за 50 хв та 0-100% за 60 хвилин. У 5 разів швидше за інші електростанції на ринку. Завжди будьте готові до аварійних відключень електроенергії або незапланованих подорожей. Швидко підключайтеся та керуйте віддалено станцією RIVER 2 зі смартфона через Wi-Fi або Bluetooth. Легко перевіряйте дані про зарядку, налаштування та вмикайте/вимикайте прилади.",
+            "inStock": false,
+            "limited": 4,
+            "price": "11 999",
+            "sku": "99-00011595",
+            "images": [
+                "https://viatec.ua/upload/images/prod/EcoFlow_Smart_Generator.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+            ],
+            "props": [
+                {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
+                {"label": "Палітра", "value": "Горячий чорний, гарячий білий, гарячий червоний, фьюжн"},
+                {"label": "Локальна пам'ять", "value": "8 Гб"},
+                {"label": "Wi-Fi", "value": "Підтримує hotspot"},
+                {"label": "Живлення", "value": "5 В DC/2 A, 1.5 Вт"}
+            ],
+            "files": [
+                {"name": "Паспорт", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"},
+                {"name": "Керівництво користувача", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"}
+            ],
+            "analogs": [
+                {"name": "AGM Asp-Micro TM160Y. ТЕПЛОВІЗІЙНИЙ МОНОКУЛЯР"},
+                {"name": "AEcoFlow RIVER 2 Портативне джерело живлення"}
+            ]
+        },
+        {
+            "title": "EcoFlow RIVER 2 Портативне джерело живлення",
+            "description": "RIVER 2 ємністю 256 Вт•год із оновленим літій-залізо-фосфатним акумулятором (LiFePO 4) гарантує 3000+ циклів із збереженням 80% ємності. Має розширений захист BMS для моніторингу напруги, струму та температури. А це дорівнює понад 10 років щоденного використання. Нова станція RIVER 2 має універсальний простий дизайн та компактну вагу, на 30% менше у порівнянні з попередньою версією – 3,5 кг. Швидка зарядка: 0% -100% за 60 хвилин. Швидка зарядка станції з революційною технологією X-Stream: 0-80% за 50 хв та 0-100% за 60 хвилин. У 5 разів швидше за інші електростанції на ринку. Завжди будьте готові до аварійних відключень електроенергії або незапланованих подорожей. Швидко підключайтеся та керуйте віддалено станцією RIVER 2 зі смартфона через Wi-Fi або Bluetooth. Легко перевіряйте дані про зарядку, налаштування та вмикайте/вимикайте прилади.",
+            "inStock": false,
+            "price": "11 999",
+            "sku": "99-00011595",
+            "images": [
+                "https://viatec.ua/upload/images/prod/RIVER_2.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+            ],
+            "props": [
+                {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
+                {"label": "Палітра", "value": "Горячий чорний, гарячий білий, гарячий червоний, фьюжн"},
+                {"label": "Локальна пам'ять", "value": "8 Гб"},
+                {"label": "Wi-Fi", "value": "Підтримує hotspot"},
+                {"label": "Живлення", "value": "5 В DC/2 A, 1.5 Вт"}
+            ],
+            "files": [
+                {"name": "Паспорт", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"},
+                {"name": "Керівництво користувача", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"}
+            ],
+            "analogs": [
+                {"name": "AGM Asp-Micro TM160Y. ТЕПЛОВІЗІЙНИЙ МОНОКУЛЯР"},
+                {"name": "AEcoFlow RIVER 2 Портативне джерело живлення"}
+            ]
+        },
+        {
+            "title": "EcoFlow RIVER 2 Портативне джерело живлення",
+            "description": "RIVER 2 ємністю 256 Вт•год із оновленим літій-залізо-фосфатним акумулятором (LiFePO 4) гарантує 3000+ циклів із збереженням 80% ємності. Має розширений захист BMS для моніторингу напруги, струму та температури. А це дорівнює понад 10 років щоденного використання. Нова станція RIVER 2 має універсальний простий дизайн та компактну вагу, на 30% менше у порівнянні з попередньою версією – 3,5 кг. Швидка зарядка: 0% -100% за 60 хвилин. Швидка зарядка станції з революційною технологією X-Stream: 0-80% за 50 хв та 0-100% за 60 хвилин. У 5 разів швидше за інші електростанції на ринку. Завжди будьте готові до аварійних відключень електроенергії або незапланованих подорожей. Швидко підключайтеся та керуйте віддалено станцією RIVER 2 зі смартфона через Wi-Fi або Bluetooth. Легко перевіряйте дані про зарядку, налаштування та вмикайте/вимикайте прилади.",
+            "inStock": false,
+            "price": "11 999",
+            "sku": "99-00011595",
+            "images": [
+                "https://viatec.ua/upload/images/prod/EcoFlow_Smart_Generator.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+            ],
+            "props": [
+                {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
+                {"label": "Палітра", "value": "Горячий чорний, гарячий білий, гарячий червоний, фьюжн"},
+                {"label": "Локальна пам'ять", "value": "8 Гб"},
+                {"label": "Wi-Fi", "value": "Підтримує hotspot"},
+                {"label": "Живлення", "value": "5 В DC/2 A, 1.5 Вт"}
+            ],
+            "files": [
+                {"name": "Паспорт", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"},
+                {"name": "Керівництво користувача", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"}
+            ],
+            "analogs": [
+                {"name": "AGM Asp-Micro TM160Y. ТЕПЛОВІЗІЙНИЙ МОНОКУЛЯР"},
+                {"name": "AEcoFlow RIVER 2 Портативне джерело живлення"}
+            ]
+        },
+        {
+            "title": "EcoFlow RIVER 2 Портативне джерело живлення",
+            "description": "RIVER 2 ємністю 256 Вт•год із оновленим літій-залізо-фосфатним акумулятором (LiFePO 4) гарантує 3000+ циклів із збереженням 80% ємності. Має розширений захист BMS для моніторингу напруги, струму та температури. А це дорівнює понад 10 років щоденного використання. Нова станція RIVER 2 має універсальний простий дизайн та компактну вагу, на 30% менше у порівнянні з попередньою версією – 3,5 кг. Швидка зарядка: 0% -100% за 60 хвилин. Швидка зарядка станції з революційною технологією X-Stream: 0-80% за 50 хв та 0-100% за 60 хвилин. У 5 разів швидше за інші електростанції на ринку. Завжди будьте готові до аварійних відключень електроенергії або незапланованих подорожей. Швидко підключайтеся та керуйте віддалено станцією RIVER 2 зі смартфона через Wi-Fi або Bluetooth. Легко перевіряйте дані про зарядку, налаштування та вмикайте/вимикайте прилади.",
+            "inStock": false,
+            "price": "11 999",
+            "sku": "99-00011595",
+            "images": [
+                "https://viatec.ua/upload/images/prod/EcoFlow_Smart_Generator3.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+            ],
+            "props": [
+                {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
+                {"label": "Палітра", "value": "Горячий чорний, гарячий білий, гарячий червоний, фьюжн"},
+                {"label": "Локальна пам'ять", "value": "8 Гб"},
+                {"label": "Wi-Fi", "value": "Підтримує hotspot"},
+                {"label": "Живлення", "value": "5 В DC/2 A, 1.5 Вт"}
+            ],
+            "files": [
+                {"name": "Паспорт", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"},
+                {"name": "Керівництво користувача", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"}
+            ],
+            "analogs": [
+                {"name": "AGM Asp-Micro TM160Y. ТЕПЛОВІЗІЙНИЙ МОНОКУЛЯР"},
+                {"name": "AEcoFlow RIVER 2 Портативне джерело живлення"}
+            ]
+        },
+        {
+            "title": "EcoFlow RIVER 2 Портативне джерело живлення",
+            "description": "RIVER 2 ємністю 256 Вт•год із оновленим літій-залізо-фосфатним акумулятором (LiFePO 4) гарантує 3000+ циклів із збереженням 80% ємності. Має розширений захист BMS для моніторингу напруги, струму та температури. А це дорівнює понад 10 років щоденного використання. Нова станція RIVER 2 має універсальний простий дизайн та компактну вагу, на 30% менше у порівнянні з попередньою версією – 3,5 кг. Швидка зарядка: 0% -100% за 60 хвилин. Швидка зарядка станції з революційною технологією X-Stream: 0-80% за 50 хв та 0-100% за 60 хвилин. У 5 разів швидше за інші електростанції на ринку. Завжди будьте готові до аварійних відключень електроенергії або незапланованих подорожей. Швидко підключайтеся та керуйте віддалено станцією RIVER 2 зі смартфона через Wi-Fi або Bluetooth. Легко перевіряйте дані про зарядку, налаштування та вмикайте/вимикайте прилади.",
+            "inStock": false,
+            "price": "11 999",
+            "sku": "99-00011595",
+            "images": [
+                "https://viatec.ua/upload/images/prod/RIVER_2.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
+                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+            ],
+            "props": [
+                {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
+                {"label": "Палітра", "value": "Горячий чорний, гарячий білий, гарячий червоний, фьюжн"},
+                {"label": "Локальна пам'ять", "value": "8 Гб"},
+                {"label": "Wi-Fi", "value": "Підтримує hotspot"},
+                {"label": "Живлення", "value": "5 В DC/2 A, 1.5 Вт"}
+            ],
+            "files": [
+                {"name": "Паспорт", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"},
+                {"name": "Керівництво користувача", "link": "http://ftp.viatec.ua/Site/Video/Termal/agm%20asp-micro/agm-asp-micro-tm-160-thermal-imaging-monocular_specsheet.pdf"}
+            ],
+            "analogs": [
+                {"name": "AGM Asp-Micro TM160Y. ТЕПЛОВІЗІЙНИЙ МОНОКУЛЯР"},
+                {"name": "AEcoFlow RIVER 2 Портативне джерело живлення"}
+            ]
         }
     ],
     "terms": [

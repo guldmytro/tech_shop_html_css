@@ -49,6 +49,24 @@
                 </div>
                 <div class="filter-box">
                     <div class="filter-box__header">
+                        <h3 class="filter-box__title">Фільтр по ціні</h3>
+                    </div>
+                    <div class="filter-price">
+                        <div class="filters-item__price"></div>
+                        <div class="filter-form__prices">
+                            <div class="filter-price__item filter-price-from">
+                                <strong>Ціна від</strong>
+                                <span class="price-value price-value_0"></span>
+                            </div>
+                            <div class="filter-price__item filter-price-to">
+                                <strong>Ціна до</strong>
+                                <span class="price-value price-value_1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-box">
+                    <div class="filter-box__header">
                         <h3 class="filter-box__title">Обсяг пам'яті</h3>
                     </div>
                     <ul class="filter-group">
@@ -76,6 +94,70 @@
                     </ul>
                 </div>
             </aside>
+            <div class="products-wrapper">
+                <ul class="products-group">
+                    {% for product in products %}
+                        <li class="products-group__item product-item">
+                            <div class="product-item__thumb product-thumb">
+                                {% if product.inStock %}
+                                    <div class="sticker sticker_shadow">
+                                        <img src="./img/icon-new.svg" alt="зірки" width="14" height="14" loading="lazy">
+                                        <span>Новинка</span>
+                                    </div>
+                                {% elif product.limited %}
+                                    <div class="sticker sticker_shadow">
+                                        <img src="./img/icon-limited.svg" alt="зірки" width="14" height="14" loading="lazy">
+                                        <span>{{ product.limited }}шт. в наявності</span>
+                                    </div>
+                                {% else %}
+                                    <div class="sticker sticker_shadow">
+                                        <img src="./img/icon-out-of-stock.svg" alt="зірки" width="14" height="14" loading="lazy">
+                                        <span>Немає в наявності</span>
+                                    </div>
+                                {% endif %}
+                                <a href="single-product.html" class="product-thumb__link">
+                                    <img class="product-thumb__img" src="{{ product.images[0] }}" alt="{{ product.title }}" loading="lazy" width="1000" height="1000">
+                                </a>
+                                <div class="product-quick-controls">
+                                    <button type="button" class="btn btn_small">
+                                        <img class="btn__img_small" src="./img/icon-add-to-cart.svg" alt="корзина" width="20" height="20" loading="lazy">
+                                        <span>В корзину</span>
+                                    </button>
+                                    <button type="button" class="btn btn_small btn_invert">
+                                        <img class="btn__img_small btn__img_invert" src="./img/icon-view.svg" alt="переглянути" width="20" height="20" loading="lazy">
+                                        <span>Переглянути</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <h2 class="product-item__title">
+                                <a href="single-product.html">{{ product.title }}</a>
+                            </h2>
+                            <div class="product-item__controls archive-product-controls">
+                                <div class="product-price">
+                                    <span class="product-price__s product-price__s_small">{{ product.price }} ₴</span>
+                                </div>
+                                <div class="product-controls__reviews">
+                                    <img src="./img/icon-star.svg" alt="зірка">
+                                    <span>4.9 (45 відгуків)</span>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="pagination">
+                    <ul class="pagination-group">
+                        <li class="pagination-group__item">
+                            <a href="archive-product.html">←</a>
+                        </li>
+                        <li class="pagination-group__item">
+                            <span>2</span>
+                        </li>
+                        <li class="pagination-group__item">
+                            <a href="archive-product.html">→</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </main>

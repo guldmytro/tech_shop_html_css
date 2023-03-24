@@ -61,6 +61,8 @@ label:hover :not(:checked) + .pseudo-radio_primary {
     border-radius: 50%;
     background-color: var(--color-bg);
     transition: transform var(--transition);
+    box-shadow: 0 1rem 1.5rem -0.3rem rgba(0, 0, 0, 0.1),
+                0 0.4rem 0.6rem -0.4rem rgba(0, 0, 0, 0.1);
 }
 
 :checked + .pseudo-checkbox_secondary {

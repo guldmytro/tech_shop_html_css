@@ -57,3 +57,23 @@
     const html = document.querySelector('html');
     html.style.setProperty('--header-offset', `${header.offsetHeight}px`);
 })();
+
+// range slider
+(function() {
+    const slider = document.querySelector('.filters-item__price');
+    const prices = document.querySelector('.filter-form__prices');
+    if (slider || prices) {
+        noUiSlider.create(slider, {
+            range: {
+                'min': 0,
+                'max': 500,
+            },
+            step: 10,
+            start: [50, 450],
+            connect: true,
+        });
+        slider.noUiSlider.on('update', function(values, handle) {
+            prices.querySelector(`.price-value_${handle}`).innerHTML = Number(values[handle]).toFixed(0) + '<span>₴</span>';
+        });
+    }
+})();
