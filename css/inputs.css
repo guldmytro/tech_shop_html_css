@@ -84,3 +84,29 @@ label:hover :not(:checked) + .pseudo-radio_primary {
 :checked + .pseudo-radio_primary {
     border: 6px solid var(--color-accent);
 }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    height: 4.4rem;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 1.5rem;
+    padding: 0 1.6rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: rgb(125, 211, 252);
+    box-shadow: 0 0 0 3px rgba(186, 230, 253, 0.5);
+    outline: none;
+}
+
+textarea {
+    height: auto;
+    resize: none;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}

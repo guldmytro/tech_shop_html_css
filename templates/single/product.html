@@ -29,7 +29,20 @@
                     <span class="product-price__s">
                         {{ product.price }} ₴
                     </span>
-                    <span class="product-info__sku">арт.: {{ product.sku }}</span>
+                    <span class="product-info__reviews">
+                        <img src="./img/icon-star.svg" alt="зірка" loading="lazy">
+                        <a href="#reviews" class="rate">4.7</a>
+                        <span class="sep">·</span>
+                        <a href="#reviews" class="cnt">
+                            <strong>142 відгука</strong>
+                        </a>
+                        <span class="sep">·</span>
+                        <span class="sticker">
+                            <img src="./img/icon-new.svg" alt="зірки" width="14" height="14" loading="lazy">
+                            <span>Новинка</span>
+                        </span>
+                    </span>
+
                 </p>
                 <div class="product-info__controls product-controls">
                     <div class="product-controls__qnt">
@@ -64,6 +77,7 @@
                 <button type="button" data-anchor="#options" class="tabs-nav__button active">Характеристики</button>
                 <button type="button" data-anchor="#video" class="tabs-nav__button">Відео</button>
                 <button type="button" data-anchor="#analog" class="tabs-nav__button">Аналоги</button>
+                <button type="button" data-anchor="#reviews" class="tabs-nav__button">Відгуки</button>
             </nav>
             <div class="tabs-content">
                 <div class="tabs-content__item active" id="options">
@@ -95,6 +109,22 @@
                             {% endfor %}
                         </tbody>
                     </table>
+                </div>
+                <div class="tabs-content__item" id="reviews">
+                    <form class="form form-review">
+                        <fieldset class="form-review__fieldset">
+                            <label for="comment">Відгук *</label>
+                            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                        </fieldset>
+                        <fieldset class="form-review__fieldset">
+                            <label for="name">Ім'я *</label>
+                            <input type="text" name="name" id="name" required>
+                        </fieldset>
+                        <fieldset class="form-review__fieldset">
+                            <label for="email">Email *</label>
+                            <input type="email" name="email" id="email" required>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>

@@ -36,10 +36,41 @@
     margin: 0;
 }
 
-.product-info__sku {
+.product-info .product-info__price {
+    margin-top: -1rem;
+}
+
+.product-info__reviews {
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
+    column-gap: 0.4rem;
     font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.product-info__reviews img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.product-info__reviews span {
+    position: relative;
+    top: 1px;
+}
+
+.product-info__reviews .sep {
+    margin: 0 0.6rem;
+    font-weight: 700;
+}
+
+.product-info__reviews .rate {
+    color: var(--color-text);
+}
+
+.product-info__reviews strong {
+    text-decoration: underline;
+    color: rgb(71, 85, 105);
 }
 
 .product-price {
@@ -72,7 +103,7 @@
     width: 1px;
     background-color: rgb(203, 213, 225);
     height: 3rem;
-    margin-right: 2rem;
+    margin-right: 1.4rem;
 }
 
 .product-controls {
@@ -235,4 +266,27 @@
 .product__props a {
     color: var(--color-text);
     text-decoration: underline;
+}
+
+.form-review {
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+}
+
+.form-review__fieldset {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0;
+    border: none;
+    row-gap: 0.6rem;
+}
+
+.form-review__fieldset:first-child {
+    grid-column: 1 / -1;
+}
+
+.form-review__fieldset label {
+    font-weight: 700;
 }
