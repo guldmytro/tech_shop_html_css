@@ -142,6 +142,7 @@
     border: none;
     background-color: transparent;
     width: 4.8rem;
+    height: auto;
     text-align: center;
     font-size: 1.6rem;
 }
@@ -268,6 +269,11 @@
     text-decoration: underline;
 }
 
+.add-review-header {
+    font-size: 2rem;
+    margin-bottom: 0.67em;
+}
+
 .form-review {
     font-size: 1.4rem;
     display: grid;
@@ -289,4 +295,10 @@
 
 .form-review__fieldset label {
     font-weight: 700;
+}
+
+.form-review__fieldset:last-child {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
 }

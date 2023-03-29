@@ -111,10 +111,11 @@
                     </table>
                 </div>
                 <div class="tabs-content__item" id="reviews">
+                    <h2 class="add-review-header">Залишити відгук</h2>
                     <form class="form form-review">
                         <fieldset class="form-review__fieldset">
                             <label for="comment">Відгук *</label>
-                            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                            <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
                         </fieldset>
                         <fieldset class="form-review__fieldset">
                             <label for="name">Ім'я *</label>
@@ -123,6 +124,12 @@
                         <fieldset class="form-review__fieldset">
                             <label for="email">Email *</label>
                             <input type="email" name="email" id="email" required>
+                        </fieldset>
+                        <fieldset class="form-review__fieldset">
+                            <button type="submit" class="btn">
+                                <img class="btn__img" src="./img/icon-send.svg" alt="конверт" width="800" height="800" loading="lazy">
+                                <span>Надіслати</span>
+                            </button>
                         </fieldset>
                     </form>
                 </div>

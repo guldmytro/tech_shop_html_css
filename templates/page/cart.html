@@ -1,0 +1,39 @@
+<main class="cart">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-header__title">Корзина</h1>
+        </div>
+        <form class="cart-form">
+            <table class="cart-table">
+                <tbody>
+                    {% for product in products %}
+                        <tr>
+                            <td class="cart-table__thumb">
+                                <a href="./single-product.html">
+                                    <img src="{{ product.images[0] }}" alt="{{ product.title }}">
+                                </a>
+                            </td>
+                            <td class="cart-table__header">
+                                <h2 class="cart-table__title">
+                                    <a href="./single-product.html">{{ product.title }}</a>
+                                </h2>
+                            </td>
+                            <td class="cart-table__cnt product-controls">
+                                <div class="product-controls__qnt">
+                                    <button type="button" aria-label="зменшити кількість">
+                                        <img src="./img/icon-minus.svg" alt="мінус">
+                                    </button>
+                                    <input type="text" disabled value="1">
+                                    <button type="button" aria-label="збільшити кількість кількість">
+                                        <img src="./img/icon-plus.svg" alt="плюс">
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="cart-table__price"></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
