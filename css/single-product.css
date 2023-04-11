@@ -145,6 +145,7 @@
     height: auto;
     text-align: center;
     font-size: 1.6rem;
+    padding: 0;
 }
 
 .product-info__hr {
