@@ -119,6 +119,10 @@
     row-gap: 1.6rem;
 }
 
+.product-item_out {
+    opacity: 0.65;
+}
+
 .product-item .sticker {
     position: absolute;
     top: 1.2rem;
@@ -204,7 +208,7 @@
     transition: opacity var(--transition);
 }
 
-.product-thumb:hover .product-quick-controls {
+.product-item:not(.product-item_out) .product-thumb:hover .product-quick-controls {
     opacity: 1;
     pointer-events: all;
 }
