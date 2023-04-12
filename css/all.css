@@ -4,10 +4,12 @@
 @import "block-model.css";
 @import "fonts.css";
 @import "basic.css";
+@import "text.css";
 @import "buttons.css";
 @import "inputs.css";
 @import "range-slider.css";
 @import "header.css";
+@import "minicart.css";
 @import "slider.css";
 @import "sticker.css";
 @import "single-product.css";

@@ -1,0 +1,10 @@
+.line {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.line_2 {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}

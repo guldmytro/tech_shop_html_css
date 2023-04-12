@@ -86,6 +86,7 @@
     font-weight: 700;
     color: var(--color-success);
     border-radius: 0.8rem;
+    white-space: nowrap;
 }
 
 .product-price__s_small {

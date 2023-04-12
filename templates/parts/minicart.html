@@ -1,0 +1,38 @@
+<div class="minicart">
+    <div class="minicart-header">
+        <h2 class="minicart__title">Корзина</h2>
+    </div>
+    <ul class="minicart-group">
+        {% for product in products %}
+            <li class="minicart-group__item minicart-item">
+                <a href="single-product.html" class="minicart-item__thumb">
+                    <img src="{{ product.images[0] }}" alt="{{ product.title }}">
+                </a>
+                <div class="minicart-item__body">
+                    <div class="minicart-item__header">
+                        <h3 class="minicart-item__title line line_2">
+                            <a href="single-product.html">{{ product.title }}</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price__s product-price__s_small">{{ product.price }} ₴</span>
+                        </div>
+                    </div>
+                    <div class="minicart-item__footer">
+                        <span class="minicart-item__cnt">К-сть 3</span>
+                        <button class="minicart-item__delete" type="button" aria-label="видалити товар {{ product.title }} із корзини">Видалити</button>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="minicart-footer">
+        <h3 class="minicart__title_s">
+            <span>Всього</span>
+            <span>233 ₴</span>
+        </h3>
+        <div class="minicart__controls">
+            <a href="cart.html" class="btn btn_invert btn_border">Корзина</a>
+            <a href="cart.html" class="btn">Оформлення</a>
+        </div>
+    </div>
+</div>
