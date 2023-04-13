@@ -1,4 +1,5 @@
 .btn {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +17,56 @@
     transition: background-color var(--transition);
     box-shadow: 0 2rem 2.5rem -0.5rem rgba(0, 0, 0, .1), 0 0.8rem 1rem -0.6rem rgba(0, 0, 0, .1);
     text-decoration: none;
+}
+
+.btn .loader {
+    position: absolute;
+    display: block;
+    width: 2.7rem;
+    height: 2.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 300ms;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.btn > :not(.loader) {
+    transition: opacity 300ms;
+}
+
+.btn.loading > :not(.loader) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn.loading .loader {
+    opacity: 1;
+}
+
+.btn .loader::after,
+.btn .loader::before {
+    position: absolute;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+.btn .loader::before {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn .loader::after {
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    animation: rotation 0.8s infinite cubic-bezier(.6,.3,.3,.6);
+
 }
 
 .btn:hover {
