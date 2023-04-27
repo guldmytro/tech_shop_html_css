@@ -1,24 +1,101 @@
 .minicart {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: var(--color-bg);
-    border-radius: 1rem;
-    border: 1px solid #e5e7eb;
-    box-shadow: var(--shadow);
+    position: fixed;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
     width: 100%;
     max-width: 44.8rem;
     z-index: 2;
-    overflow: hidden;
+    isolation: isolate;
+    pointer-events: none;
+}
+
+.minicart.active {
+    pointer-events: all;
+}
+
+.minicart::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-2);
+}
+
+.minicart.active::before {
+    opacity: 0.5;
+}
+
+.minicart.active .minicart-inner {
+    translate: none;
+    opacity: 1;
+}
+
+.minicart-inner {
+    background-color: inherit;
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    translate: calc(100% + 1px) 0;
+    transition: translate var(--transition-2),
+                opacity var(--transition-2);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    border: 1px solid #e5e7eb;
+    background-color: var(--color-bg);
+}
+
+.minicart__close {
+    position: absolute;
+    left: -2.5rem;
+    top: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #e8e8e8;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: background-color var(--transition),
+                border-color var(--transition);
+}
+
+.minicart__close svg {
+    width: 45%;
+    fill: #333;
+    transform: rotate(-90deg);
+    transition: fill var(--transition);
+}
+
+.minicart__close:hover {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+}
+
+.minicart__close:hover svg {
+    fill: #fff;
 }
 
 .minicart-header {
-    padding: 2rem 2rem 0;
+    padding: 2.5rem 2rem 0;
 }
 
 .minicart__title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .minicart__title_s {
@@ -71,7 +148,7 @@
 }
 
 .minicart-item__title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.2;
 }
 
@@ -113,6 +190,7 @@
 }
 
 .minicart-footer {
+    margin-top: auto;
     padding: 2rem;
     background-color: rgb(249, 250, 251);
 }
@@ -133,4 +211,3 @@
 .minicart__controls .btn_invert {
     box-shadow: none;
 }
-

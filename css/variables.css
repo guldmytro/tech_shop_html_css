@@ -24,7 +24,9 @@
     --filter-icon: invert(23%) sepia(12%) saturate(1332%) hue-rotate(180deg) brightness(93%) contrast(88%);
     /* transition */
     --time-transition: 150ms;
+    --time-transition-2: 300ms;
     --transition: var(--time-transition) cubic-bezier(.4,0,.2,1);
+    --transition-2: var(--time-transition-2) cubic-bezier(.4,0,.2,1);
     /* border */
     --border-light: 1px solid #ebebeb;
     /* aspect-ratio */

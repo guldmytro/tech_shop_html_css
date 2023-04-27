@@ -77,3 +77,18 @@
         });
     }
 })();
+
+// minicart toogle
+(function() {
+    const closeBtn = document.querySelector('.minicart__close');
+    const minicart = document.querySelector('.minicart');
+    const openBtn = document.querySelector('.header-controls__btn_cart'); 
+    if (closeBtn && minicart && openBtn) {
+        closeBtn.addEventListener('click', () => {
+            minicart.classList.remove('active');
+        });
+        openBtn.addEventListener('click', () => {
+            minicart.classList.add('active');
+        });
+    }
+})();
