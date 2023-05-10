@@ -100,6 +100,10 @@
     color: var(--color-text);
 }
 
+.btn_invert .btn__img {
+    filter: none;
+}
+
 .btn__img_invert {
     filter: var(--filter-icon);
 }

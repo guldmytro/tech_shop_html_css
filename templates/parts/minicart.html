@@ -1,4 +1,5 @@
-<div class="minicart active">
+<div class="minicart">
+    <div class="minicart__backdrop"></div>
     <div class="minicart-inner">
         <button type="button" class="minicart__close" aria-label="закрити мінікорзину">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="ml-1 -mr-1 h-4 w-4 text-slate-400"><path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"></path></svg>
@@ -17,13 +18,23 @@
                             <h3 class="minicart-item__title line line_2">
                                 <a href="single-product.html">{{ product.title }}</a>
                             </h3>
-                            <div class="product-price">
-                                <span class="product-price__s product-price__s_small">{{ product.price }} ₴</span>
-                            </div>
+                            <button class="minicart-item__delete" type="button" aria-label="видалити товар {{ product.title }} із корзини">
+                                <img src="./img/icon-close.svg" alt="хрестик">
+                            </button>
                         </div>
                         <div class="minicart-item__footer">
-                            <span class="minicart-item__cnt">К-сть 3</span>
-                            <button class="minicart-item__delete" type="button" aria-label="видалити товар {{ product.title }} із корзини">Видалити</button>
+                            <div class="minicart-item__cnt">
+                                <div class="quantity-box">
+                                    <button type="button" class="minicart-cnt-button" aria-label="зменшити кількість">-</button>
+                                    <input type="text" value="1" size="4" min="1" max="99" inputmode="numeric" step="1" autocomplete="off">
+                                    <button type="button" class="minicart-cnt-button" aria-label="зменшити кількість">+</button>
+                                </div>
+                                x
+                                <span class="minicart-price">{{ product.price }} ₴</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="minicart-price_total">{{ product.price }} ₴</span>
+                            </div>
                         </div>
                     </div>
                 </li>

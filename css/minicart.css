@@ -14,7 +14,7 @@
     pointer-events: all;
 }
 
-.minicart::before {
+.minicart__backdrop {
     content: '';
     display: block;
     position: fixed;
@@ -28,7 +28,7 @@
     transition: opacity var(--transition-2);
 }
 
-.minicart.active::before {
+.minicart.active .minicart__backdrop {
     opacity: 0.5;
 }
 
@@ -161,6 +161,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    row-gap: 1.5rem;
 }
 
 .minicart-item__body .product-price {
@@ -176,17 +177,25 @@
     align-items: flex-start;
 }
 
-.minicart-item__cnt {
-    color: #6b7280;
-    font-size: 1.4rem;
+.minicart-item__delete {
+    flex-shrink: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: background-color var(--transition);
 }
 
-.minicart-item__delete {
-    color: rgb(2, 132, 199);
-    font-weight: 700;
-    border: none;
-    background-color: transparent;
-    font-size: 1.4rem;
+.minicart-item__delete:hover {
+    background-color: #f1f1f1;
+}
+
+.minicart-item__delete img {
+    width: 60%;
 }
 
 .minicart-footer {
@@ -211,3 +220,83 @@
 .minicart__controls .btn_invert {
     box-shadow: none;
 }
+
+.minicart-item__cnt {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.6rem;
+    font-size: 1.3rem;
+}
+
+.quantity-box {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 2.2rem;
+    border: 1px solid #ddd;
+    border-radius: 10rem;
+}
+
+.quantity-box input {
+    padding: 0;
+    padding-bottom: 0.2rem;
+    height: 100%;
+    border-radius: 0;
+    line-height: 2rem;
+    width: 3ch;
+    text-align: center;
+    border: none;
+    border-left: inherit;
+    border-right: inherit;
+}
+
+.quantity-box input:focus {
+    box-shadow: none;
+    border-color: inherit;
+}
+
+.minicart-cnt-button {
+    padding-bottom: 0.2rem;
+    height: 100%;
+    width: 2rem;
+    text-align: center;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    background-color: transparent;
+    transition: background-color var(--transition);
+}
+
+.minicart-cnt-button:hover {
+    background-color: #f1f1f1;
+}
+
+.minicart-cnt-button:first-of-type {
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+}
+
+.minicart-cnt-button:last-of-type {
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.minicart-price_total {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* 
+<div class="minicart-item__cnt">
+    <button type="button" class="minicart-cnt-button" aria-label="зменшити кількість">-</button>
+    <input type="text" value="1" size="4" inputmode="numeric" step="1" autocomplete="off">
+    <button type="button" class="minicart-cnt-button" aria-label="зменшити кількість">+</button>
+    x 
+    <span class="minicart-price">{{ product.price }} ₴</span>
+</div>
+<div class="product-price">
+    <span class="minicart-price_total">{{ product.price }} ₴</span>
+</div>
+*/
