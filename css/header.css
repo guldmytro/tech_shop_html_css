@@ -295,7 +295,7 @@
 .subgroup-list__item + .subgroup-list__item .subgroup-list__link,
 .supermenu-group__item + .supermenu-group__item .supermenu-group__label,
 .supermenu-subgroup__item + .supermenu-subgroup__item .supermenu-subgroup__title {
-    border-top: var(--border-light);
+    border-top: var(--border-light-1);
 }
 
 

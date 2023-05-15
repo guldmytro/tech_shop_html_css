@@ -221,7 +221,7 @@
     box-shadow: none;
 }
 
-.minicart-item__cnt {
+.cart-item__cnt {
     display: flex;
     flex-flow: row nowrap;
     flex-shrink: 0;
@@ -237,14 +237,17 @@
     height: 2.2rem;
     border: 1px solid #ddd;
     border-radius: 10rem;
+    overflow: hidden;
+}
+
+.quantity-box_big {
+    height: 3rem;
 }
 
 .quantity-box input {
     padding: 0;
-    padding-bottom: 0.2rem;
     height: 100%;
     border-radius: 0;
-    line-height: 2rem;
     width: 3ch;
     text-align: center;
     border: none;
@@ -252,12 +255,16 @@
     border-right: inherit;
 }
 
+.quantity-box_big input {
+    width: 4.5ch;
+}
+
 .quantity-box input:focus {
     box-shadow: none;
     border-color: inherit;
 }
 
-.minicart-cnt-button {
+.cart-cnt-button {
     padding-bottom: 0.2rem;
     height: 100%;
     width: 2rem;
@@ -269,7 +276,11 @@
     transition: background-color var(--transition);
 }
 
-.minicart-cnt-button:hover {
+.quantity-box_big .cart-cnt-button {
+    width: 2.8rem;
+}
+
+.cart-cnt-button:hover {
     background-color: #f1f1f1;
 }
 
@@ -287,16 +298,3 @@
     font-size: 1.3rem;
     font-weight: 700;
 }
-
-/* 
-<div class="minicart-item__cnt">
-    <button type="button" class="minicart-cnt-button" aria-label="зменшити кількість">-</button>
-    <input type="text" value="1" size="4" inputmode="numeric" step="1" autocomplete="off">
-    <button type="button" class="minicart-cnt-button" aria-label="зменшити кількість">+</button>
-    x 
-    <span class="minicart-price">{{ product.price }} ₴</span>
-</div>
-<div class="product-price">
-    <span class="minicart-price_total">{{ product.price }} ₴</span>
-</div>
-*/

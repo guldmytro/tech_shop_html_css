@@ -3,11 +3,11 @@
         <div class="section-header">
             <h1 class="section-header__title">Корзина</h1>
         </div>
-        <form class="cart-form">
+        <div class="cart-box">
             <table class="cart-table">
                 <tbody>
                     {% for product in products %}
-                        <tr>
+                        <tr class="cart-item">
                             <td class="cart-table__thumb">
                                 <a href="./single-product.html">
                                     <img src="{{ product.images[0] }}" alt="{{ product.title }}">
@@ -15,25 +15,35 @@
                             </td>
                             <td class="cart-table__header">
                                 <h2 class="cart-table__title">
-                                    <a href="./single-product.html">{{ product.title }}</a>
+                                    <a href="./single-product.html" class="line line_2">{{ product.title }}</a>
                                 </h2>
                             </td>
+                            <td class="cart-table__price">{{ product.price }} ₴</td>
                             <td class="cart-table__cnt product-controls">
-                                <div class="product-controls__qnt">
-                                    <button type="button" aria-label="зменшити кількість">
-                                        <img src="./img/icon-minus.svg" alt="мінус">
-                                    </button>
-                                    <input type="text" disabled value="1">
-                                    <button type="button" aria-label="збільшити кількість кількість">
-                                        <img src="./img/icon-plus.svg" alt="плюс">
-                                    </button>
+                                <div class="cart-item__cnt">
+                                    <div class="quantity-box quantity-box_big">
+                                        <button type="button" class="cart-cnt-button" aria-label="зменшити кількість">-</button>
+                                        <input type="text" value="1" size="4" min="1" max="99" inputmode="numeric" step="1" autocomplete="off">
+                                        <button type="button" class="cart-cnt-button" aria-label="зменшити кількість">+</button>
+                                    </div>
                                 </div>
+                                <button type="button" class="cart-item__remove">
+                                    <span>Видалити</span>
+                                </button>
                             </td>
-                            <td class="cart-table__price"></td>
+                            <td class="cart-table__total-price">26 566 ₴</td>
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
-        </form>
+            <div class="cart-totals">
+                <div class="cart-totals__header">
+                    <h2 class="cart-totals__title">Сума замовлення</h2>
+                    <strong class="cart-totals__value">45 000 ₴</strong>
+                </div>
+                <a href="checkout.html" class="btn">Оформлення</a>
+            </div>
+
+        </div>
     </div>
 </main>
