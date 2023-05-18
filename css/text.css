@@ -1,10 +1,19 @@
+.line_1 {
+    --line-count: 1;
+}
+
+.line_2 {
+    --line-count: 2;
+}
+
+.line_3 {
+    --line-count: 3;
+}
+
 .line {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-}
-
-.line_2 {
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
+    -webkit-line-clamp: var(--line-count);
+    line-clamp: var(--line-count);
 }
