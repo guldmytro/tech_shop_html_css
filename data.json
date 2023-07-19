@@ -10,10 +10,7 @@
             "price": "11 999",
             "sku": "99-00011595",
             "images": [
-                "https://viatec.ua/upload/images/prod/RIVER_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+                "./img/product.avif"
             ],
             "props": [
                 {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
@@ -39,10 +36,7 @@
             "price": "11 999",
             "sku": "99-00011595",
             "images": [
-                "https://viatec.ua/upload/images/prod/EcoFlow_Smart_Generator.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+                "./img/product.avif"
             ],
             "props": [
                 {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
@@ -67,10 +61,7 @@
             "price": "11 999",
             "sku": "99-00011595",
             "images": [
-                "https://viatec.ua/upload/images/prod/RIVER_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+                "./img/product.avif"
             ],
             "props": [
                 {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
@@ -95,10 +86,7 @@
             "price": "11 999",
             "sku": "99-00011595",
             "images": [
-                "https://viatec.ua/upload/images/prod/EcoFlow_Smart_Generator.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+                "./img/product.avif"
             ],
             "props": [
                 {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
@@ -123,10 +111,7 @@
             "price": "11 999",
             "sku": "99-00011595",
             "images": [
-                "https://viatec.ua/upload/images/prod/EcoFlow_Smart_Generator3.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+                "./img/product.avif"
             ],
             "props": [
                 {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
@@ -151,10 +136,7 @@
             "price": "11 999",
             "sku": "99-00011595",
             "images": [
-                "https://viatec.ua/upload/images/prod/RIVER_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_1.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_2.webp",
-                "https://viatec.ua/upload/images/prod/RIVER_2_3.webp"
+                "./img/product.avif"
             ],
             "props": [
                 {"label": "Дисплей", "value": "720×540, 0.2\", LCOS"},
