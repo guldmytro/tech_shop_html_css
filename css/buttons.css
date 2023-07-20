@@ -115,3 +115,33 @@
 .btn_border {
     border: 1px solid rgb(226, 232, 240);
 }
+
+.btn_light {
+    font-size: 1.4rem;
+    padding: 0.45em 0.9em;
+    font-weight: 600;
+    background-color: #f8fafc;
+    color: var(--color-text);
+    border-radius: 0.5rem;
+    box-shadow: none;
+    height: auto;
+    line-height: 1.7;
+}
+
+.btn_light:hover {
+    background-color: #f1f5f9;
+}
+
+.btn_transparent {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--color-text);
+}
+
+.btn_transparent:hover {
+    background-color: #f3f4f6;
+}
+
+.btn_compact {
+    padding: 0.88em 1.75em;
+}

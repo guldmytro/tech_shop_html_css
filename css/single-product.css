@@ -1,7 +1,6 @@
 .product .container {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    row-gap: 8rem;
 }
 
 .product-row {
@@ -198,6 +197,7 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
     column-gap: 4rem;
+    margin-top: 6rem;
 }
 
 .tabs-nav {
@@ -283,7 +283,7 @@
     gap: 3rem;
 }
 
-.form-review__fieldset {
+.form__fieldset {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     padding: 0;
@@ -291,15 +291,16 @@
     row-gap: 0.6rem;
 }
 
-.form-review__fieldset:first-child {
+.form-review fieldset:first-child {
     grid-column: 1 / -1;
 }
 
-.form-review__fieldset label {
-    font-weight: 700;
+.form__fieldset label {
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
-.form-review__fieldset:last-child {
+.form-review fieldset:last-child {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;

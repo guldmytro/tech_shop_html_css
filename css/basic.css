@@ -58,8 +58,35 @@ button {
     cursor: pointer;
 }
 
+.section-header {
+    margin-bottom: 5rem;
+}
+
 .section-header__title {
     font-weight: 700;
     font-size: 3.5rem;
-    margin: 0 0 0.67em;
+    margin: 0 0 0.6em;
+}
+
+.section-header__breadcrumbs {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: 600;
+    color: var(--color-text-lighter);
+}
+
+.section-header__breadcrumbs > :nth-last-child(n + 2)::after {
+    display: inline-block;
+    content: '/';
+    pointer-events: none;
+    margin: 0 0.6rem;
+}
+
+.section-header__breadcrumbs > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-header__breadcrumbs > span {
+    text-decoration: underline;
 }

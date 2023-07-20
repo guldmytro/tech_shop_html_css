@@ -88,11 +88,13 @@ label:hover :not(:checked) + .pseudo-radio_primary {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="phone"],
 textarea {
     height: 4.4rem;
     border: 1px solid rgb(229, 231, 235);
     border-radius: 1.5rem;
     padding: 0 1.6rem;
+    font-size: 1.4rem;
 }
 
 input[type="text"]:focus,
