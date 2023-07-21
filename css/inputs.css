@@ -100,6 +100,7 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
+input[type="phone"]:focus,
 textarea:focus {
     border-color: rgb(125, 211, 252);
     box-shadow: 0 0 0 3px rgba(186, 230, 253, 0.5);

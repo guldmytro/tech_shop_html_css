@@ -7,39 +7,7 @@
         <div class="minicart-header">
             <h2 class="minicart__title">Корзина</h2>
         </div>
-        <ul class="minicart-group">
-            {% for product in products %}
-                <li class="minicart-group__item minicart-item">
-                    <a href="single-product.html" class="minicart-item__thumb">
-                        <img src="{{ product.images[0] }}" alt="{{ product.title }}">
-                    </a>
-                    <div class="minicart-item__body">
-                        <div class="minicart-item__header">
-                            <h3 class="minicart-item__title line line_2">
-                                <a href="single-product.html">{{ product.title }}</a>
-                            </h3>
-                            <button class="minicart-item__delete" type="button" aria-label="видалити товар {{ product.title }} із корзини">
-                                <img src="./img/icon-close.svg" alt="хрестик">
-                            </button>
-                        </div>
-                        <div class="minicart-item__footer">
-                            <div class="cart-item__cnt">
-                                <div class="quantity-box">
-                                    <button type="button" class="cart-cnt-button" aria-label="зменшити кількість">-</button>
-                                    <input type="text" value="1" size="4" min="1" max="99" inputmode="numeric" step="1" autocomplete="off">
-                                    <button type="button" class="cart-cnt-button" aria-label="зменшити кількість">+</button>
-                                </div>
-                                x
-                                <span class="cart-price">{{ product.price }} ₴</span>
-                            </div>
-                            <div class="product-price">
-                                <span class="minicart-price_total">{{ product.price }} ₴</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            {% endfor %}
-        </ul>
+        {% include 'parts/minicart-items.html' %}
         <div class="minicart-footer">
             <h3 class="minicart__title_s">
                 <span>Всього</span>
@@ -47,7 +15,7 @@
             </h3>
             <div class="minicart__controls">
                 <a href="cart.html" class="btn btn_invert btn_border">Корзина</a>
-                <a href="cart.html" class="btn">Оформлення</a>
+                <a href="checkout.html" class="btn">Оформлення</a>
             </div>
         </div>
     </div>

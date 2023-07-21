@@ -49,7 +49,23 @@
                     </div>
                 </div>
             </div>
-            <div class="col"></div>
+            <div class="col">
+                <div class="checkout-order">
+                    <h2 class="checkout-order__title">Ваше замовлення</h2>
+                    {% include 'parts/minicart-items.html' %}
+                    <div class="checkout-order__comfirm">
+                        <table class="checkout-total">
+                            <tbody>
+                                <tr>
+                                    <th>Сума замовлення</th>
+                                    <td>45 000 ₴</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="submit" class="btn checkout-order__submit">Підтвердити замовлення</button>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
 </main>
